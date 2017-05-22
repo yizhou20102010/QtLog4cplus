@@ -20,10 +20,10 @@ Log4cplus1.2.1+vs2015+Qt5.7.0
 
    ```c++
    //include path
-   INCLUDEPATH+=$$quote(***/log4cplus/include)
+   INCLUDEPATH+=$$quote(%Dir%/log4cplus/include)
    //libs
-   win32:CONFIG(release, debug|release): LIBS += -Lquote(***/log4cplus/libs/) -llog4cplus
-   else:win32:CONFIG(debug, debug|release): LIBS += -Lquote(***/log4cplus/libs/) -llog4cplusD
+   win32:CONFIG(release, debug|release): LIBS += -Lquote(%Dir%/log4cplus/libs/) -llog4cplus
+   else:win32:CONFIG(debug, debug|release): LIBS += -Lquote(%Dir%/log4cplus/libs/) -llog4cplusD
    ```
 
 ## 应用简单例子
